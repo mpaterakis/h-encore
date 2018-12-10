@@ -6,13 +6,12 @@ In order to use this, you need to do the following:
 
 1. Enable `Unsafe Homebrews` under `HENkaku Settings` in the Settings application to grant VitaShell full permission.
 2. Launch VitaShell and navigate to `ux0:user/00/savedata/`.
-3. Press triangle on the folder `PCSG90096` and select `Open decrypted` (you should NOT see the folder `sce_pfs` within this folder when opened decrypted).
-4. Remove the folder `ux0:user/00/savedata/PCSG90096`.
-5. Close VitaShell and launch *h-encore* (this will now not trigger the exploit anymore, since we've removed the savedata).
-6. Close the game after you see the first screen and return back to VitaShell.
-7. A fresh folder of `PCSG90096` at `ux0:user/00/savedata` should have been created.
-8. Copy the new [`system.dat`](https://github.com/mpaterakis/h-encore/releases/download/v1.0/system.dat) to `ux0:user/00/savedata/PCSG90096/system.dat` where you need to open the `PCSG90096` using `Open decrypted` (you should NOT see the folder `sce_pfs` within this folder when opened decrypted).
-9. Done! h-encore won't require you to select `Exit` on each launch now!
+3. Remove the folder `ux0:user/00/savedata/PCSG90096`.
+4. Close VitaShell and launch *h-encore* (this will now not trigger the exploit anymore, since we've removed the savedata).
+5. Close the game after you see the first screen and return back to VitaShell.
+6. A fresh folder of `PCSG90096` at `ux0:user/00/savedata` should have been created.
+7. Copy the new [`system.dat`](https://github.com/mpaterakis/h-encore/releases/download/v1.0/system.dat) to `ux0:user/00/savedata/PCSG90096/system.dat` where you need to open the `PCSG90096` using `Open decrypted` (you should NOT see the folder `sce_pfs` within this folder when opened decrypted).
+8. Done! h-encore won't require you to select `Exit` on each launch now!
 
 # h-encore
 
