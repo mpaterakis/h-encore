@@ -1,3 +1,7 @@
+# Changes
+
+* The menu is skipped, removing the need to press X every time h-encore is run after a boot.
+
 # h-encore
 
 *h-encore*, where *h* stands for hacks and homebrews, is the second public jailbreak for the *PS Vita™* which supports the newest firmwares 3.65, 3.67 and 3.68. It allows you to make kernel- and user-modifications, change the clock speed, install plugins, run homebrews and much more.

@@ -437,62 +437,9 @@ int module_start(SceSize args, void *argp) {
 
   print_menu(sel);
 
-  while (1) {
-    sceCtrlPeekBufferPositive(0, &pad, 1);
-
-    old_buttons = current_buttons;
-    current_buttons = pad.buttons;
-    pressed_buttons = current_buttons & ~old_buttons;
-
-    if (pressed_buttons & SCE_CTRL_UP) {
-      if (sel > 0)
-        sel--;
-      else
-        sel = N_ITEMS - 1;
-
-      print_menu(sel);
-    }
-
-    if (pressed_buttons & SCE_CTRL_DOWN) {
-      if (sel < N_ITEMS - 1)
-        sel++;
-      else
-        sel = 0;
-
-      print_menu(sel);
-    }
-
-    if ((enter_button == SCE_SYSTEM_PARAM_ENTER_BUTTON_CROSS && pressed_buttons & SCE_CTRL_CROSS) ||
-        (enter_button == SCE_SYSTEM_PARAM_ENTER_BUTTON_CIRCLE && pressed_buttons & SCE_CTRL_CIRCLE)) {
-      psvDebugScreenSetTextColor(AZURE);
-
-      if (sel == EXIT) {
-        printf(" > Exiting...\n");
-        sceKernelDelayThread(500 * 1000);
-        break;
-      } else if (sel == INSTALL_HENKAKU) {
-        printf(" > Installing HENkaku...\n");
-        sceKernelDelayThread(500 * 1000);
-        res = install_henkaku();
-      } else if (sel == DOWNLOAD_VITASHELL) {
-        printf(" > Downloading VitaShell...\n");
-        sceKernelDelayThread(500 * 1000);
-        res = download_vitashell();
-      } else if (sel == RESET_TAIHEN_CONFIG) {
-        printf(" > Resetting taiHEN config.txt...\n");
-        sceKernelDelayThread(500 * 1000);
-        res = reset_taihen_config();
-      }
-
-      print_result(res);
-
-      sel = 0;
-      psvDebugScreenClear();
-      print_menu(sel);
-    }
-
-    sceKernelDelayThread(10 * 1000);
-  }
+  psvDebugScreenSetXY(0, 0);
+  psvDebugScreenSetTextColor(AZURE);
+  printf("\n Running h-encore...\n\n");
 
   sceShellUtilUnlock(SCE_SHELL_UTIL_LOCK_TYPE_PS_BTN);
 

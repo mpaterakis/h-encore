@@ -1,0 +1,12 @@
+make henkaku
+make[1]: Entering directory `/c/Users/XX-OFFICIAL/Documents/NetBeansProjects/h-encore'
+cd taiHEN; mkdir build; cd build; cmake ..; make; cp taihen.skprx ../../bootstrap/res/taihen.skprx
+CMake Error: The source directory "C:/Users/XX-OFFICIAL/Documents/NetBeansProjects/h-encore/taiHEN" does not appear to contain CMakeLists.txt.
+Specify --help for usage, or press the help button on the CMake GUI.
+make[2]: Entering directory `/c/Users/XX-OFFICIAL/Documents/NetBeansProjects/h-encore/taiHEN/build'
+make[2]: *** No targets specified and no makefile found.  Stop.
+make[2]: Leaving directory `/c/Users/XX-OFFICIAL/Documents/NetBeansProjects/h-encore/taiHEN/build'
+cp: cannot stat `taihen.skprx': No such file or directory
+make[1]: *** [henkaku] Error 1
+make[1]: Leaving directory `/c/Users/XX-OFFICIAL/Documents/NetBeansProjects/h-encore'
+make: *** [all] Error 2
