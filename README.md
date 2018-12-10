@@ -4,6 +4,7 @@
 
 In order to use this, you need to do the following:
 
+0. Follow the original **Installation** steps to install h-encore on your Vita.
 1. Enable `Unsafe Homebrews` under `HENkaku Settings` in the Settings application to grant VitaShell full permission.
 2. Launch VitaShell and navigate to `ux0:user/00/savedata/`.
 3. Remove the folder `ux0:user/00/savedata/PCSG90096`.
